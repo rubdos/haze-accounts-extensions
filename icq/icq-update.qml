@@ -9,7 +9,7 @@ AccountCredentialsAgent {
     property bool _ready: newAccount.saved && oldAccount.deleted
 
     function _handleUpdateError(errorMessage) {
-        console.log("Jolla account update error:", errorMessage)
+        console.log("ICQ account update error:", errorMessage)
         initialPage.acceptDestinationInstance.state = "info"
         initialPage.acceptDestinationInstance.infoDescription = errorMessage
         root.credentialsUpdateError(errorMessage)
